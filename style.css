@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-image: url(./pexels-eye4dtail-374916.jpg);
+    background-size: cover;
+    padding-top: 200px;
+    background-position: center;
+    font-family: 'Montserrat', sans-serif;
+    padding-right: 20px;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: right;
+    color: #090811;
+    font-weight: 1000;
+    text-shadow: 3px 3px 0px #9ae46a, 
+            5px 5px 0px #9baca1, 
+            8px 8px 0px #d3dada;
+    margin-top: 10px;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+h4 {
+    text-align: center;
+    margin-top: 0;
+    font-size: 15px;
+    width: 100%;
+}
+
+
+#calc-container {
+    height: 470px;
+    width: 350px;
+    border-style: solid;
+    border-width: 7px;
+    border-color: #171718;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+    margin-top: 0;
+    background-image: linear-gradient(rgba(255,255,255,0.95), rgba(255,255,255,0.5)), url(./seamless-pattern-cow-vector-1970367.jpg); 
+    align-self: flex-end;
+    margin-right: 300px;
+}
+
+#display {
+    height: 60px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #171718;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+
+#current {
+    font-size: 35px;
+    margin-left: auto;
+    padding-right: 10px;
+}
+
+#buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+}
+
+#buttons div {
+    background-color: #aae781;
+    aspect-ratio: 1;
+}
+
+#big-buttons {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: 65px 65px 65px;
+    grid-gap: 5px;
+    margin-top: 5px;
+}
+
+.button, .button-number, .button-operator {
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#zero, #one, #two, #three, #four, #five, #six, #seven, #eight, #nine,
+#plus, #minus, #multiply, #divide, #equals, #point, #del, #clr {
+    background-color: #aae781;
+}
+
+#zero:hover, #one:hover, #two:hover, #three:hover, #four:hover, #five:hover, 
+#six:hover, #seven:hover, #eight:hover, #nine:hover, #plus:hover, #minus:hover, 
+#multiply:hover, #divide:hover, #equals:hover, #point:hover, #del:hover, #clr:hover {
+    background-color: #98cc75;
+    cursor: pointer;
+}
+
+#zero:active, #one:active, #two:active, #three:active, #four:active, #five:active, 
+#six:active, #seven:active, #eight:active, #nine:active, #plus:active, #minus:active, 
+#multiply:active, #divide:active, #equals:active, #point:active, #del:active, #clr:active {
+    background-color: #649962;
+    cursor: pointer;
+}
+
+#footer {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 100%;
+    background-color: #d9e4da;
+}
